@@ -1,17 +1,17 @@
 <div class="col-lg-4 col-md-6">
 
-	<div class="panel panel-default" id="bound-to-ds-widget">
+	<div class="card" id="bound-to-ds-widget">
 
-	  <div class="panel-heading" data-container="body" data-i18n="[title]directory_service.info">
+	  <div class="card-header" data-container="body" data-i18n="[title]directory_service.info">
 
-	    <h3 class="panel-title"><i class="fa fa-bullseye"></i>
+	    <i class="fa fa-bullseye"></i>
 	        <span data-i18n="directory_service.bound_title"></span>
-	        <list-link data-url="/show/listing/directory_service/directoryservice"></list-link>
-	    </h3>
+	        <a href="/show/listing/directory_service/directoryservice" class="pull-right"><i class="fa fa-list"></i></a>
+	    
 
 	  </div>
 
-	  <div class="panel-body text-center"></div>
+	  <div class="card-body text-center"></div>
 
 	</div><!-- /panel -->
 
@@ -29,7 +29,7 @@ $(document).on('appUpdate', function(e, lang) {
 
 		var notbound = data.total - data.arebound;
 
-		var panel = $('#bound-to-ds-widget div.panel-body'),
+		var panel = $('#bound-to-ds-widget div.card-body'),
 			baseUrl = appUrl + '/show/listing/directory_service/directoryservice';
 		panel.empty();
 

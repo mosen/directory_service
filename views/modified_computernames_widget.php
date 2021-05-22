@@ -1,13 +1,13 @@
 <div class="col-lg-4 col-md-6">
 
-	<div class="panel panel-default" id="modified-computernames-widget">
+	<div class="card" id="modified-computernames-widget">
 
-		<div id="modified-computer-names" class="panel-heading" data-container="body" data-i18n="[title]directory_service.modified_computernames_tooltip">
+		<div id="modified-computer-names" class="card-header" data-container="body" data-i18n="[title]directory_service.modified_computernames_tooltip">
 
 			<div class="panel-title"><i class="fa fa-code-fork"></i>
 			    <span data-i18n="directory_service.modified_computernames_title"></span> 
 			    <span class="counter badge"></span>
-			    <list-link data-url="/show/listing/reportdata/clients"></list-link>
+			    <a href="/show/listing/reportdata/clients" class="pull-right"><i class="fa fa-list"></i></a>
 			</div>
 
 		</div>
